@@ -1,5 +1,6 @@
 
 import React, { useState } from "react";
+import todo from "./todo" ;
 
 function App() {
   const [count, setCount] = useState(0);
@@ -11,6 +12,7 @@ function App() {
       <button onClick={() => setCount(count + 1)}>Increment</button>
       <button onClick={() => setCount(count - 1)}>Decrement</button>
       <button onClick={() => setCount(0)}>Reset</button>
+      <todo/>
     </div>
   );
 }
